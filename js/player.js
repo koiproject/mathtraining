@@ -1,6 +1,6 @@
 'use strict';
 
-const hashAjaxName = 'GASPODARIK_MATH4KIDS_PLAYERS';
+const hashAjaxName = 'GASPODARIK1_MATH4KIDS_PLAYERS';
 
 const AjaxHandlerScript = 'https://fe.it-academy.by/AjaxStringStorage2.php';
 
