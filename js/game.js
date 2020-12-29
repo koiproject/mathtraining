@@ -53,7 +53,6 @@ let game = {
         .join('')
         .match(/[0-9+-\/\*]+/)[0];
       this.result = eval(expression);
-      //покажем кнопку "Проверить ответ"
       document.getElementById('check_answer').style.display = 'block';
     }
   },
