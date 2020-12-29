@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Математика для детей</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <script src="js/messagebox.js"></script>
+    <link rel="stylesheet" href="css/messagebox.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="board_wrapper">
+        <section id="game"></section>
+        <section id="rules"></section>
+        <section id="study"></section>
+        <section id="study-more"></section>
+        <section id="best"></section>
+        <img src="img/board.png" alt="board" class="board" />
+      </div>
+      <ul id="navbar" class="menu">
+        <li class="menu_item"><a href="#game" id="playBtn">Играть</a></li>
+        <li class="menu_item"><a href="#rules" id="rulesBtn">Правила</a></li>
+        <li class="menu_item"><a href="#study" id="studyBtn">Учеба</a></li>
+        <li class="menu_item"><a href="#best" id="bestBtn">Лучшие результаты</a></li>
+      </ul>
+    </div>
+    <audio id="menu_sound" preload="auto">
+      <source src="snd/menu-item.mp3" />
+    </audio>
+    <iframe src="snd/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio autoplay="autoplay" preload="auto">
+      <source src="snd/background.mp3" />
+    </audio>
+    <script src="js/player.js"></script>
+    <script src="js/board.js" defer></script>
+    <script src="js/game.js" async></script>
+  </body>
+</html>

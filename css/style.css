@@ -1,0 +1,199 @@
+body {
+  background-image: url('../img/background.jpg');
+}
+
+#rules,
+#study,
+#best {
+  display: none;
+}
+
+div.wrapper {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 200px;
+}
+
+#navbar li {
+  border-left: 10px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+#navbar a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background-color: #949494;
+  color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-left: 5px solid #33adff;
+  display: block;
+}
+
+#navbar a:hover {
+  background-color: #666;
+  border-left: 5px solid #3333ff;
+}
+
+img.board {
+  width: 900px;
+}
+
+.board_wrapper {
+  position: relative;
+}
+
+div.board_field {
+  position: absolute;
+  width: 85%;
+  padding: 35px 75px;
+}
+
+p.rules_text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 1px #595959;
+  text-decoration: none;
+  line-height: 1.4em;
+}
+
+.board_field h1,
+h3 {
+  color: white;
+}
+
+span.example_number {
+  font-size: large;
+  font-weight: bold;
+  color: #33adff;
+}
+
+.study_text {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 1px #595959;
+  text-decoration: none;
+  line-height: 1.4em;
+}
+
+table.best_results {
+  margin: 0 30%;
+  padding: 60px 70px;
+  position: absolute;
+  width: 40%;
+  font-size: large;
+  font-weight: bold;
+  color: #33adff;
+}
+
+.numbers {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  transition: transform 0.1s;
+  cursor: url('http://csscursor.info/source/santahand.png'), default;
+}
+
+.numbers img:hover {
+  transform: translateY(-20px) scale(1) rotate(10deg);
+  z-index: 1;
+}
+
+.math_sign {
+  top: 75%;
+  left: 25%;
+}
+
+.symbol {
+  height: 80px;
+}
+
+#minus {
+  width: 100px;
+  height: 30px;
+  margin: 25px 0;
+}
+
+.board_field div {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 90%;
+  height: 100px;
+  border: solid 2px #33adff;
+}
+
+div.button {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  top: 40%;
+  left: 43%;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+}
+
+div.button:hover {
+  background: rgb(53, 167, 110);
+}
+
+div.button:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+.button-more {
+  position: absolute;
+  right: 50px;
+  bottom: -20px;
+  display: inline-block;
+  font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  text-decoration: none;
+  user-select: none;
+  padding: .3em 1em;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #0c9c0d linear-gradient(#82d18d, #0c9c0d);
+  box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+
+.button-more:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@-webkit-keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
