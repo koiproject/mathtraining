@@ -61,7 +61,6 @@ let game = {
     EO.preventDefault();
   },
   mathExpressionDrop(EO, Div) {
-    // добавлен символ в формуле
     let cloneSymbol = this.draggedSymbol.cloneNode(true);
     EO = EO || window.event;
     EO.preventDefault();
